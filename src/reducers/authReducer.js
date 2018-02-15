@@ -18,7 +18,7 @@ export default function reducer(state = {
         case "ADMIN_LOGIN_ERROR":
             return {loginInfo: Object.assign({}, state.loginInfo, {errorMessage: action.payload, loading: false})};
         case "ADMIN_LOGOUT":
-            return {user: null, token: null};
+            return {user: null, token: null, loginInfo: {loading: false, errorMessage: null}};
         default:
             return state;
     }
