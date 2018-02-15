@@ -1,0 +1,270 @@
+.admin-panel
+
+    .content
+        margin: 0 auto
+        margin-top: 80px
+        background: white
+        max-width: 1400px
+        padding: 2%
+
+    .admin-nav
+        z-index: 10
+
+    .admin-nav a
+        display: inline-block
+        margin: 0px 15px
+
+    .admin-content
+        background: white
+        max-width: 1400px
+        margin: 0 auto
+        margin-top: 80px
+        padding: 2%
+
+    .logout-btn
+        margin-left: 20px
+        box-shadow: inset -3px -3px 20px darken($orange, 20%)
+        background: $orange
+        font-size: 18px
+        font-weight: bold
+        border-radius: 3px
+        
+
+    h1
+        font-family: "Kalam"
+        font-size: 1.6em
+        margin-bottom: 2%
+
+
+    //ORDERS PAGE
+
+    .orders
+
+        .table
+            max-width: 1000px
+
+        .table-row
+            position: relative
+            
+        .table-header, .table-row-content
+            display: flex
+            position: relative
+
+            div
+                padding: 1%
+                width: 20%
+                min-width: 200px
+
+                &:first-of-type
+                    width: 5%
+                    min-width: auto
+            
+            .show-more
+                cursor: pointer
+
+                img
+                    display: inline-block
+                    margin: 0 auto
+
+        .table-row
+            border-bottom: 1px solid gainsboro
+
+        .more
+            background: #efefef
+            position: relative
+            top: 100%
+            padding-left: 5%
+            padding-top: .5%
+            padding-bottom: 1%
+            display: none
+
+        .table-header
+            background: #2f2f2f
+            color: $white
+            font-weight: bold
+
+    .nest
+        padding-left: 2%
+
+
+    //CATALOUGE PAGE
+    .catalogue
+
+        .add-new-product
+            background: $green
+            color: #efefef
+            box-shadow: inset -3px -3px 10px darken($green, 10%)
+            border-radius: 3px
+            padding: 5px 10px
+            font-weight: bold
+            font-size: 18px
+
+    .catalogue-products
+        margin-top: 40px
+
+    .catalogue-header
+        margin-bottom: 1%
+        text-transform: uppercase
+        background: #2f2f2f
+        color: $white
+        padding: 1% 2%
+        font-weight: bold        
+
+    .product 
+        margin-bottom: .5%
+
+    .product, .catalogue-header
+        display: flex
+
+        & > *
+            flex: 1
+            display: inline-block
+            margin: 0px 2%
+
+        & > button:nth-of-type(1), & > a:nth-of-type(1), & > div:nth-of-type(3), & > div:nth-of-type(4)
+            max-width: 150px
+
+        .edit-btn
+            width: 100%
+            background: $green
+            color: #efefef
+            box-shadow: inset -3px -3px 10px darken($green, 10%)
+            border-radius: 3px
+            padding: 5px 10px
+            font-weight: bold
+            font-size: 18px
+
+        .remove-btn
+            background: crimson
+            color: #efefef
+            box-shadow: inset -3px -3px 10px darken(crimson, 10%)
+            border-radius: 3px
+            padding: 5px 10px
+            font-weight: bold
+            font-size: 18px
+
+    .delete-modal
+        position: fixed
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        border: 1px solid darkgrey
+        width: 50%
+        max-width: 600px
+        min-width: 300px
+        background: white
+        border-radius: 3px
+        padding: 1% 2%
+
+        .product-deleted
+            margin-top: 40px
+
+            .container
+                display: flex
+                justify-content: space-around
+
+        p
+            margin-bottom: 10px
+
+        .close-modal
+            display: inline-block
+            float: right
+            font-size: 1.6em
+            font-weight: bold
+            padding: 0px 12px
+            border-radius: 3px
+            border: 2px solid crimson
+            background: crimson
+            color: $white
+            font-family: sans-serif
+            text-transform: uppercase
+            cursor: pointer
+
+            &:hover
+                background: transparent
+                color: crimson
+
+        .delete-btn
+            display: block
+            background: crimson
+            color: #efefef
+            box-shadow: inset -3px -3px 10px darken(crimson, 10%)
+            border-radius: 3px
+            padding: 5px 10px
+            font-weight: bold
+            font-size: 18px
+            margin: 0 auto
+            margin-top: 20px
+
+
+    //EDIT PRODUCT PAGE
+    .edit-product-page, .new-product-form
+        padding: 1% 4%
+        border-radius: 3px
+
+        .success-message
+            display: inline-block
+            padding: .5% 1%
+            border: 2px solid mediumseagreen
+            margin-top: 10px
+            background: honeydew
+            color: mediumseagreen
+            font-weight: bold
+            font-family: "Kalam"
+
+        .loading
+            margin-top: 10px
+            color: dimgray
+
+        .field
+            display: flex
+            align-items: flex-start
+            margin-bottom: 2%
+
+            img
+                border: 1px solid gainsboro
+                padding: 1%
+
+            .input
+                margin-right: 5%
+                font-size: 18px
+
+                input
+                    font-size: 18px
+                    font-family: "Arapey"
+                    padding: 1% 10px
+
+                textarea
+                    display: block
+                    margin-top: 2%
+                    width: 500px
+                    max-width: 500px
+                    min-width: 300px
+                    min-height: 50px
+                    font-size: 18px
+                    font-family: "Arapey"
+                    padding: 1% 10px
+
+            small
+                display: inline-block
+                font-size: 14px
+                color: dimgray
+                color: #3A3F78
+                line-height: 1.2em
+                font-weight: bold
+                background: #D9D9DA
+                margin-top: 4%
+                padding: 1% 2%
+                max-width: 500px
+                border-radius: 3px
+                border: 1px solid #3A3F78
+        
+        .edit-btn, .create-product-btn
+            background: $green
+            color: #efefef
+            box-shadow: inset -3px -3px 10px darken($green, 10%)
+            border-radius: 3px
+            padding: 5px 10px
+            font-weight: bold
+            font-size: 18px
+            display: block

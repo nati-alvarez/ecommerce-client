@@ -1,0 +1,49 @@
+.admin-login-form
+    background: white
+    max-width: 800px
+    width: 90%
+    padding: 2%
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+
+    h1
+        font-family: "Kalam"
+        font-size: 1.6em
+
+    .input-field
+        display: flex
+        width: 90%
+        max-width: 300px
+        margin: 2% 0px
+        justify-content: space-between
+        font-size: 18px
+
+        input
+            max-width: 250px
+            width: 60%
+            font-size: 18px
+            font-family: 'Arapey'
+            padding: 1%
+
+    .login-button
+        display: block
+        border-radius: 3px
+        padding: 5px 20px
+        font-weight: bold
+        font-size: 18px
+        background: $orange
+        box-shadow: inset -3px -3px 10px darken($orange, 20%)     
+
+    .error-message, .loading
+        border-radius: 3px
+        font-size: 16px
+        margin-top: 10px
+        display: inline-block
+
+    .error-message
+        padding: .5% 2%
+        border: 1px solid crimson
+        color: crimson
+        font-weight: bold

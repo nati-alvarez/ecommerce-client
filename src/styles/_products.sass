@@ -1,0 +1,74 @@
+.products-catalogue
+    padding: 5% 2%
+
+    h1
+        font-family: 'Kalam'
+        font-size: 2em
+
+
+.products
+    display: flex
+    flex-wrap: wrap
+    max-width: 1400px
+    margin: 0 auto
+    margin-top: 2%
+
+    .product
+        width: 20%
+        margin: 1% .5%
+        background: white
+        padding: 2%
+        min-width: 200px
+
+        .image-container
+
+            img
+                height: 250px
+                width: 100%
+                object-fit: scale-down
+                object-position: left
+
+        .product-name
+            margin-top: 5%
+            margin-bottom: 2%
+            text-decoration: underline
+
+        .price
+            font-weight: bold
+            color: green
+            margin-bottom: 5%
+
+        .stock
+            color: gray
+            font-size: 16px
+                
+            &.out
+                color: crimson
+                font-weight: bold
+
+
+//RESPONSIVE STYLES
+
+@media (max-width: 1050px)
+
+    .products-catalogue
+        margin-top: 60px
+
+        .products
+            justify-content: space-around
+
+            .product
+                margin: 2% 0px
+                width: 30%
+
+
+@media (max-width: 490px)
+
+    .products-catalogue
+
+        .products
+            justify-content: space-around
+
+            .product
+                margin: 5% 0px
+                width: 60%

@@ -1,0 +1,77 @@
+.product-page
+    padding: 80px 2%
+
+    .product
+        background: white
+        display: flex
+        padding: 1% 2%
+
+        h1
+            font-size: 1.2em
+            margin-bottom: 10%
+
+        .product-image
+            width: 225px
+            height: 300px
+            padding: 0px 2%
+
+            img
+                width: 225px
+                height: 300px
+                object-fit: fill
+                object-position: left
+
+        .description
+            margin-bottom: 5%
+            font-size: 16px
+            color: #3f3f3f
+
+        .price
+            color: mediumseagreen
+            font-size: 22px
+            font-weight: bold
+            margin-bottom: 8%
+
+        .qty
+            margin-bottom: 5%
+            color: #3f3f3f
+            font-size: 16px
+
+            input
+                border-color: 1px solid dimgray 
+
+        .stock
+            font-size: 16px 
+            color: gray
+            padding: 0px 3%
+
+
+
+        .add-to-cart
+            border-radius: 3px
+            padding: 5px 10px
+            font-weight: bold
+            font-size: 18px
+            background: $orange
+            box-shadow: inset -3px -3px 10px darken($orange, 20%)        
+
+        .out-of-stock
+        
+            .out
+                color: crimson
+                font-weight: bold
+
+            small
+                font-size: 12px
+                color: dimgray
+
+        #notification
+            font-family: 'Kalam'
+            margin-top: 5%
+            padding: 2%
+            background: honeydew
+            color: mediumseagreen
+            font-size: 16px
+            border: 1px solid mediumseagreen
+            border-radius: 3px
+            font-weight: bold
