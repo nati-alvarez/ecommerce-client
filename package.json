@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "start": "webpack-dev-server",
-    "build": "webpack"
+    "build": "webpack",
+    "build:prod": "NODE_ENV=production webpack -p"
   },
   "author": "Natividad Alvarez",
   "license": "ISC",
