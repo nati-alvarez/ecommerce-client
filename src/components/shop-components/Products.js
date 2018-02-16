@@ -19,7 +19,7 @@ class Products extends Component {
                 products.push(item);
             });
         }else {
-            products = "no products found";
+            products = "loading catalogue please wait...";
         }
 
         return(
